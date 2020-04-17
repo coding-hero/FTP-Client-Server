@@ -1,0 +1,46 @@
+{
+    "commandChannelPort": 7001,
+    "dataChannelPort": 7002,
+    "users": [
+        {
+            "user": "navid",
+            "password": "pass"
+        },
+        {
+            "user": "farzad",
+            "password": "5678"
+        }
+    ],
+    "accounting": {
+        "enable": true,
+        "threshold": 100,
+        "users": [
+            {
+                "user": "navid",
+                "size": "1000",
+                "email": "navid@navid.com",
+                "alert": true
+            },
+            {
+                "user": "farzad",
+                "size": "149996965",
+                "email": "farzad@ahabibi.com",
+                "alert": false
+            }
+        ]
+    },
+    "logging": {
+        "enable": true,
+        "path": "./logs.log"
+    },
+    "authorization": {
+        "enable": true,
+        "admins": [
+            "farzad"
+        ],
+        "files": [
+            "./config.json",
+            "./example.png"
+        ]
+    }
+}
